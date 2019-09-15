@@ -29,19 +29,19 @@ window.onload = function() {
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() == 0) {
-            $(".wrap").css("background-color", "black");
-            $(".current-location").css("color", "white");
-            $("body").css("background-color", "black");
+            // $(".wrap").css("background-color", "black");
+            // $(".current-location").css("color", "white");
+            // $("body").css("background-color", "black");
         } else {
-            $(".wrap").css("background-color", "white");
-            $(".current-location").css("color", "black");
-            $("body").css("background-color", "white");
+            // $(".wrap").css("background-color", "white");
+            // $(".current-location").css("color", "red");
+            // $("body").css("background-color", "white");
         }
     });
 
     $("nav.wrap").hover(function () {
-        $(".current-location").html('photos are from...');
-        $(".current-year h1").html('2019');
+        // Check if mouse is hovering on nav
+        $(".current-location").html('these photos are from...');
     });
 
     $(".south-korea").hover(function () {

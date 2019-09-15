@@ -21,9 +21,11 @@ nav.wrap {
     letter-spacing: 1px;
     font-size: 10px;
     text-align: center;
+    background-color: white;
 }
 
 nav.wrap h1 {
+    color: red;
     font-family: "Quicksand", sans-serif;
     opacity: 0;
     transition: 0.3s ease-in-out;
@@ -60,7 +62,7 @@ nav.wrap h1 {
     transition: 0.5s ease-in-out;
     position: absolute;
     right: 20px;
-    margin-top: 20vh;
+    margin-top: 25vh;
     text-align: center;
     position: fixed;
 }
@@ -82,7 +84,7 @@ nav.wrap h1 {
 
 .social-media-right a:hover {
     color: red;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .current-year {
@@ -105,7 +107,6 @@ nav.wrap h1 {
 }
 
 .photo-wrap {
-    border: 1px solid red;
     opacity: 0;
     transition: 1s ease-in-out;
     background-color: white;
@@ -117,7 +118,7 @@ nav.wrap h1 {
 
 .south-korea {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     padding-top: 15vh;
@@ -134,14 +135,20 @@ nav.wrap h1 {
     transform: scale(1.05)
 }
 
+.teaser:hover > img {
+    filter: grayscale(0%);
+}
+
 .teaser img {
+    transition: 0.3s ease-in-out;
     width: 100%;
+    filter: grayscale(100%);
 }
 
 .korea-no-1 {
-    width: 90%;
-    justify-self: start;
-    align-self: center;
+    width: 60%;
+    justify-self: end;
+    align-self: flex-end;
 }
 
 .korea-no-2 {
@@ -157,17 +164,17 @@ nav.wrap h1 {
 }
 
 .korea-no-4 {
-    width: 70%;
-    justify-self: end;
+    width: 80%;
+    justify-self: start;
     align-self: flex-start;
 }
 
 .urbana-champaign {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-right: 13vw;
     padding-left: 13vw;
     overflow: hidden;
@@ -176,18 +183,19 @@ nav.wrap h1 {
 .urbana-champaign-no-1 {
     width: 85%;
     justify-self: end;
+    align-self: flex-end;
 }
 
 .urbana-champaign-no-2 {
-    width: 90%;
+    width: 70%;
     align-self: flex-end;
-    justify-self: end;
+    justify-self: start;
 }
 
 .urbana-champaign-no-3 {
     width: 60%;
-    justify-self: center;
-    align-self: flex-end;
+    justify-self: end;
+    align-self: flex-start;
 }
 
 .urbana-champaign-no-4 {
@@ -198,10 +206,10 @@ nav.wrap h1 {
 
 .chicago {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-right: 13vw;
     padding-left: 13vw;
     overflow: hidden;
@@ -209,20 +217,20 @@ nav.wrap h1 {
 
 .chicago-no-1 {
     width: 70%;
-    align-self: flex-start;
-    justify-self: start;
+    justify-self: end;
+    align-self: flex-end;
 }
 
 .chicago-no-2 {
     width: 80%;
     align-self: flex-end;
-    justify-self: center;
+    justify-self: start;
 }
 
 .chicago-no-3 {
-    width: 90%;
+    width: 60%;
     justify-self: end;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .chicago-no-4 {
@@ -233,34 +241,35 @@ nav.wrap h1 {
 
 .seattle {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-right: 13vw;
     padding-left: 13vw;
     overflow: hidden;
 }
 
 .seattle-no-1 {
-    width: 85%;
+    width: 65%;
     justify-self: end;
+    align-self: flex-end;
 }
 
 .seattle-no-2 {
     width: 90%;
-    justify-self: center;
     align-self: flex-end;
+    justify-self: start;
 }
 
 .seattle-no-3 {
-    width: 70%;
-    justify-self: start;
-    align-self: center;
+    width: 80%;
+    justify-self: end;
+    align-self: flex-start;
 }
 
 .seattle-no-4 {
-    width: 100%;
+    width: 70%;
     align-self: flex-start;
     justify-self: start;
 }
